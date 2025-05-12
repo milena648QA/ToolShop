@@ -23,10 +23,10 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jdk.version>11</jdk.version>
+        <jdk.version>18</jdk.version>
         <core.version>1.0.34</core.version>
         <testng.version>7.0.0</testng.version>
-        <restassured.version>4.2.0</restassured.version>
+        <restassured.version>4.5.1</restassured.version>
         <allure-rest-assured.version>2.13.2</allure-rest-assured.version>
         <allure-testng>2.13.2</allure-testng>
         <slf4j-log4j12.version>1.7.29</slf4j-log4j12.version>
@@ -41,12 +41,8 @@
 
     <dependencies>
 
-        <!-- https://tamediapmd.jfrog.io/tamediapmd/webapp/#/artifacts/browse/tree/General/qa-fat2slim/ch/tamedia/core -->
-        <dependency>
-            <groupId>group.tx</groupId>
-            <artifactId>core</artifactId>
-            <version>${core.version}</version>
-        </dependency>
+
+
         <!-- https://mvnrepository.com/artifact/org.testng/testng -->
         <dependency>
             <groupId>org.testng</groupId>
@@ -132,7 +128,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.24</version>
+            <version>1.18.30</version>
             <scope>provided</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.assertj/assertj-core -->
