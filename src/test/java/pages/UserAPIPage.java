@@ -25,6 +25,7 @@ public class UserAPIPage extends BasePage
 
         Response response = postAPIResult(url,path,bodyText,"");
 
+        System.out.println("response:"+response.getBody().asString());
         JSONObject responseJSON = new JSONObject(response.getBody().asString());
         token = responseJSON.getString("access_token");
         return response;
