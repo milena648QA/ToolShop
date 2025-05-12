@@ -6,7 +6,8 @@ import static pages.UserAPIPage.token;
 
 public class FavoritesAPIPage extends BasePage {
 
-    public Response retrieveAllFavorites() {
+    public Response retrieveAllFavorites()
+    {
 
         String url = "https://api.practicesoftwaretesting.com/";
         String path = "favorites";
