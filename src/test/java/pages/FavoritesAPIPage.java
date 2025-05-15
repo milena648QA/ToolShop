@@ -26,4 +26,15 @@ public class FavoritesAPIPage extends BasePage {
         return response;
 
     }
+
+    public Response retrieveSpecificFavorite() {
+
+        String url = "https://api.practicesoftwaretesting.com/";
+        String path = "favorites/01jvb2ja7rvygj77d8g5qfkzj0";
+
+        Response response = getAPIResult(url, path,"", token);
+        System.out.println(response.getBody().asString());
+        return response;
+
+    }
 }

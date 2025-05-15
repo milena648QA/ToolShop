@@ -9,6 +9,7 @@ import pages.UserAPIPage;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+import static org.junit.Assert.assertEquals;
 
 
 public class UserAPITest {
@@ -24,7 +25,7 @@ public class UserAPITest {
 
             int statusCode = response.getStatusCode();
             System.out.println("status code:" + statusCode);
-            Assert.assertEquals(201, statusCode);
+            Assert.assertEquals(201,statusCode);
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
